@@ -1,7 +1,7 @@
 .PHONY: all clean fclean re print_hex
 
 ASM_NAME = asm
-VM_NAME = corewar
+VM_NAME = corew
 PRINT_HEX = print_hex
 CC = gcc
 ASM_SRC_PATH = ./asm_src/
@@ -40,7 +40,7 @@ $(ASM_OBJ_PATH)%.o: $(ASM_SRC_PATH)%.c
 
 $(VM_OBJ_PATH)%.o: $(VM_SRC_PATH)%.c
 	@mkdir $(VM_OBJ_PATH) 2> /dev/null || echo "" > /dev/null
-	@echo "\033[36mCOREWAR:\033[0m [\033[35mCompilation:\033[0m\033[32m $@\033[0m]"
+	@echo "\033[36mCOREW:\033[0m [\033[35mCompilation:\033[0m\033[32m $@\033[0m]"
 	@$(CC) -o $@ -c $< $(CFLAGS) -I$(VM_INC_PATH) -I$(LIB_INC_PATH)
 
 $(ASM_NAME): $(LIB_NAME) $(ASM_OBJ)
@@ -52,7 +52,7 @@ $(ASM_NAME): $(LIB_NAME) $(ASM_OBJ)
 $(VM_NAME): $(LIB_NAME) $(VM_OBJ)
 	@$(CC) -ltermcap $(CFLAGS) -o $@ $(LIB) $^
 	@echo "[\033[36m---------------------------------------\033[0m]"
-	@echo "[\033[36m------------- COREWAR - OK ------------\033[0m]"
+	@echo "[\033[36m-------------- COREW - OK -------------\033[0m]"
 	@echo "[\033[36m---------------------------------------\033[0m]"
 
 $(LIB_NAME):
