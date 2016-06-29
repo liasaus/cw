@@ -64,11 +64,11 @@ void			flush_buffer(t_vm *vm)
 	}
 }
 
-int				corewar(char **av)
+int				corew(char **av)
 {
 	t_vm vm;
 
-	if (!init_corewar(&vm, av))
+	if (!init_corew(&vm, av))
 	{
 		exit_with_error("parse error");
 		return (0);
@@ -83,6 +83,6 @@ int				corewar(char **av)
 int				main(int ac, char **av)
 {
 	if (ac >= 2)
-		corewar(av + 1);
+		corew(av + 1);
 	return (0);
 }

@@ -52,7 +52,7 @@ int				magic_number_is_correct(unsigned char *b, int len)
 		i--;
 	}
 	ptr = (unsigned int *)mem;
-	return ((ptr[0] == COREWAR_EXEC_MAGIC) ? 1 : 0);
+	return ((ptr[0] == COREW_EXEC_MAGIC) ? 1 : 0);
 }
 
 void			dl_champ(t_champ *champ, char *champ_binary, unsigned int lc)

@@ -132,7 +132,7 @@ int					check_array_have(int *t, int len, int what);
 unsigned int		get_prog_length(unsigned char *b, int len);
 int					magic_number_is_correct(unsigned char *b, int len);
 void				fight(t_vm *vm);
-int					init_corewar(t_vm *vm, char **av);
+int					init_corew(t_vm *vm, char **av);
 int					get_champions(char **av, t_vm *vm);
 void				hex_dump(unsigned char *memory, int len);
 void				output_mode(t_vm *vm);

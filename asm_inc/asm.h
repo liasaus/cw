@@ -36,7 +36,7 @@
 # define T_LAB					8
 # define PROG_NAME_LENGTH		(128)
 # define COMMENT_LENGTH			(2048)
-# define COREWAR_EXEC_MAGIC		0xea83f3
+# define COREW_EXEC_MAGIC		0xea83f3
 
 typedef struct				s_header
 {

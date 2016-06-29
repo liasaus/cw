@@ -72,7 +72,7 @@ int		init_procs(t_vm *vm, int i, int i2, int i3)
 	return (1);
 }
 
-int		init_corewar(t_vm *vm, char **av)
+int		init_corew(t_vm *vm, char **av)
 {
 	vm->nbr_cycle = -1;
 	vm->visu = 0;
