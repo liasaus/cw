@@ -1,0 +1,10 @@
+*.o
+._.DS_Store
+.DS_Store
+*.a
+corewar
+print_hex
+asm
+*.cor
+.nfs*
+*.s
